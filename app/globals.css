@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: "Roboto", serif !important;
+  box-sizing: border-box;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #7777776d;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 35%;
+  background-color: #007bff;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 30px;
+}
+
+.accordionSection {
+  border: 1px solid #0000000f;
+  border-left: none;
+  border-right: none;
+  padding: 8px 0px;
+
+  * {
+    box-shadow: none !important;
+    background-color: transparent !important;
+
+    .spanPlus {
+      background-color: #000 !important;
+    }
+  }
+}
+
+.header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background-color: #ffffff3b;
+    bottom: 12px;
+    left: 180px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background-color: #ffffff3b;
+    bottom: 12px;
+    right: 190px;
+    z-index: -1;
+  }
+}
+
+
+.activeItem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: -27px;
+  left: 0px;
+}
+
+.effect .children {
+  animation: content-animation 1s ease forwards;
+}
+
+@keyframes content-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border-left: 1px dashed #68D391;
+  top: 0;
+  z-index: 2;
+}
