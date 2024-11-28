@@ -8,7 +8,7 @@ const BannerFAQ = () => {
         <div>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative bg-fixed h-[90vh] md:h-[100vh] bg-cover bg-bottom md:bg-top" // Classes for background styling
+                className="relative h-[90vh] md:h-[100vh] bg-cover bg-bottom md:bg-top" // Classes for background styling
                 style={{ backgroundImage: 'url(/background/faq.jpg)' }} // Inline style for setting the background image
             >
                 {/* Semi-transparent overlay for darkening the background */}

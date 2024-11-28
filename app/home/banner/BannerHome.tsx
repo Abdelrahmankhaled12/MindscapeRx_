@@ -11,7 +11,7 @@ const BannerHome = () => {
         <div className='overflow-hidden'>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative bg-fixed h-[110vh] bg-cover bg-center"
+                className="relative h-[110vh] bg-cover bg-center"
                 style={{ backgroundImage: 'url(/background/home.jpg)' }} // Inline style for background image
             >
                 {/* Semi-transparent overlay for darkening the background */}

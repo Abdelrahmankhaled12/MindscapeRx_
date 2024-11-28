@@ -7,7 +7,7 @@ const BannerProgram = () => {
         <div>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative overflow-hidden bg-fixed h-[95vh]  bg-cover bg-bottom md:bg-top" // Classes for background styling
+                className="relative overflow-hidden  h-[95vh]  bg-cover bg-bottom md:bg-top" // Classes for background styling
                 style={{ backgroundImage: 'url(/background/program.jpg)' }} // Inline style for setting the background image
             >
                 <Image src={logo} alt="Logo" className="w-32 md:w-64 absolute top-1/2 left-1/2 opacity-40 transform -translate-x-1/2 -translate-y-1/2" />

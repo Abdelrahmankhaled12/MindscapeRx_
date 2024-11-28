@@ -7,7 +7,7 @@ const BannerScience = () => {
         <div>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative overflow-hidden bg-fixed h-[80vh] md:h-[85vh] bg-cover bg-bottom md:bg-top" // Classes for background styling
+                className="relative overflow-hidden  h-[80vh] md:h-[85vh] bg-cover bg-bottom md:bg-top" // Classes for background styling
                 style={{ backgroundImage: 'url(/background/science.jpg)' }} // Inline style for setting the background image
             >
                 {/* Semi-transparent overlay for darkening the background */}

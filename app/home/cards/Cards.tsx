@@ -70,7 +70,7 @@ const Cards = () => {
                 className="w-full h-[400px] object-cover"
               />
               {/* Text content of the card, positioned at the bottom */}
-              <div className={`absolute top-[80%] left-0 text-white p-4 duration-500 ${index === 0 || index === 3 ? "group-hover:top-[54%]" : index === 5 ? "group-hover:top-[62%]" : "group-hover:top-[47%]"}   group-hover:bg-[#008000d0] group-hover:opacity-80`}>
+              <div className={`absolute top-[87%] left-0 text-white p-4 duration-500 ${index === 0 || index === 3 ? "group-hover:top-[54%]" : index === 5 ? "group-hover:top-[62%]" : "group-hover:top-[47%]"}   group-hover:bg-[#008000d0] group-hover:opacity-80`}>
                 <h3 className="font-semibold text-[22px]">{item.title}</h3>
                 <p className="text-[#ffffffec] leading-[1.9]">{item.text}</p>
               </div>

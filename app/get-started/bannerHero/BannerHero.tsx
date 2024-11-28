@@ -8,7 +8,7 @@ const BannerHero = () => {
         <div className='overflow-hidden'>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative bg-fixed h-[85vh] bg-cover bg-center"
+                className="relative h-[85vh] bg-cover bg-center"
                 style={{ backgroundImage: 'url(/background/get-started.jpg)' }} // Inline style for background image
             >
                 {/* Semi-transparent overlay for darkening the background */}

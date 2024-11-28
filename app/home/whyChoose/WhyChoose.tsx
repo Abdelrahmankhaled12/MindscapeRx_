@@ -44,8 +44,11 @@ const WhyChoose = () => {
       <ContentWrapper>
         <div className="grid lgg:grid-cols-2">
           <div className="text">
-            <h1 className='text-[35px] md:text-[60px] leading-[1.1] font-medium text-transparent bg-clip-text bg-[#000000]' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-              Why Choose <br /> <span className='bg-clip-text bg-gradient-to-r from-blue-500 via-[#00ff5e] to-[#ffc20b]'>ketamine therapy ?</span>
+            <h1 className='text-[35px] md:text-[60px] leading-[1.1] font-medium' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              Why Choose
+            </h1>
+            <h1 className='text-[35px] md:text-[60px] text-transparent font-medium bg-clip-text bg-gradient-to-r from-[#00bfff] to-[#54e951]'>
+              ketamine therapy ?
             </h1>
             <div className="icon my-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
               <Image src={icon} alt='' />

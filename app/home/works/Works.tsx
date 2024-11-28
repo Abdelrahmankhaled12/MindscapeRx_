@@ -6,7 +6,7 @@ import imag3 from '../../../assets/home/work_3.png'; // Image for the third step
 import Image from 'next/image'; // Next.js optimized image component
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome arrow icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
-
+import line from '../../../assets/home/line.jpg'
 // Define the data structure for each item
 const items = [
     {
@@ -28,17 +28,20 @@ const items = [
 
 const Works = () => {
     return (
-        <div className='pt-[20px] pb-[60px] overflow-hidden'>
+        <div className='pt-[20px] pb-[60px] overflow-hidden relative'>
+            <Image src={line} alt='' className='absolute w-[100%] top-[118px] hidden md:block' />
+
             {/* Wrapping the content with ContentWrapper for consistent layout */}
             <ContentWrapper>
                 {/* Title for the "How It Works" section */}
                 <h1 className='text-[45px] text-[#000000] text-center' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">How It Works</h1>
 
                 {/* Grid layout to display the steps in three columns on medium and larger screens */}
-                <div className="grid md:grid-cols-3 gap-5 mt-12">
+                <div className="grid md:grid-cols-3 gap-5 mt-12 relative">
+
                     {/* Loop through each step item to display it dynamically */}
                     {items.map((item, index) => (
-                        <div className="box text-center" key={index}  data-aos="fade-up" data-aos-delay={(index + 1) * 150} data-aos-duration="800">
+                        <div className="box text-center" key={index} data-aos="fade-up" data-aos-delay={(index + 1) * 150} data-aos-duration="800">
                             {/* Image section for each step */}
                             <div className="image">
                                 <Image src={item.image} alt={item.title} className='block mx-auto' />
