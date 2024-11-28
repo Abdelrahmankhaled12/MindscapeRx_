@@ -8,9 +8,9 @@ import Image from 'next/image'; // Next.js optimized image component
 // Functional component to display study findings and additional information
 const Negative = () => {
     return (
-        <div className='bg-[#ffffff]  pt-10 pb-[60px] rounded-tl-[50px] rounded-tr-[50px] overflow-hidden relative top-[-50px]'> {/* White background with rounded top corners */}
+        <div className='bg-[#ffffff]  pt-2 pb-[30px] rounded-tl-[50px] rounded-tr-[50px] overflow-hidden relative top-[-50px]'> {/* White background with rounded top corners */}
 
-            <div className="hidden md:block h-[393px] w-[363px] absolute left-0 bottom-[200px] filter blur-[50px]  bg-gradient-to-tr from-green-100 via-yellow-100 to-blue-100 p-8 rounded-lg">
+            <div className="hidden md:block h-[393px] w-[363px] absolute left-[-120px] bottom-[80px] filter blur-[120px]  bg-gradient-to-tr from-green-100 via-yellow-100 to-blue-100 p-8 rounded-lg">
             </div>
             <ContentWrapper> {/* Wrapper for consistent content alignment */}
                 <div className="pt-[90px]">
@@ -22,7 +22,7 @@ const Negative = () => {
                                 <Image
                                     src={image2}
                                     alt="Telehealth Consultation"
-                                    className="w-[230px] h-[180px] sm:w-[440px] sm:h-[260px] rounded-xl shadow-md"
+                                    className="w-[230px] h-[180px] sm:w-[360px] sm:h-[200px] rounded-xl shadow-md"
                                 />
                             </div>
 
@@ -31,7 +31,7 @@ const Negative = () => {
                                 <Image
                                     src={image}
                                     alt="Person Relaxing"
-                                    className="w-[230px]  sm:w-[320px] sm:h-[220px] rounded-xl shadow-md"
+                                    className="w-[230px]  sm:w-[320px] sm:h-[200px] rounded-xl shadow-md"
                                 />
                             </div>
                         </div>

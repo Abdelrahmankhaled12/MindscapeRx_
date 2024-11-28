@@ -24,7 +24,7 @@ const WhyLose = () => {
                             <p className="mb-6 text-[#ffffffe0] leading-[1.7] text-[16px]">
                                 Unlike high-dose ketamine, low and mid-range dosages provide immediate, tangible therapeutic benefits without intense psychoactive effects, such as hallucinations. Mindscape Rx connects you with an experienced provider who prescribes a personalized dose to meet your specific needs.
                             </p>
-                            <p className="mb-4 text-[#ffffffe0] leading-[1.7] text-[16px]">
+                            <p className=" text-[#ffffffe0] leading-[1.7] text-[16px]">
                                 With Mindscape Rx, you don’t need supervision when you administer the ketamine treatment. Because the effects are subtle, you can experience the benefits of ketamine therapy as needed, at almost any location or time of day, and use it to address symptoms in the moment.
                             </p>
                         </div>

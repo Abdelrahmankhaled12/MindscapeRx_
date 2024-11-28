@@ -14,7 +14,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome for social media icons
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faMinus, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { useRouter } from 'next/navigation'
 
 const items = [
   { title: "Improve your mood fast", content: "Ketamine acts on glutamate, a neurotransmitter that supports synaptic communication in brain areas involved in learning and mood regulation. Ketamine therapy increases synaptic activity right away, rapidly improving mood and mental processing." },
@@ -23,6 +24,9 @@ const items = [
 ]
 
 const WhyChoose = () => {
+
+  const router = useRouter()
+
   // Initialize state with an array of booleans for each accordion
   const [openStates, setOpenStates] = useState(Array(items.length).fill(false));
 
@@ -65,7 +69,7 @@ const WhyChoose = () => {
                       onClick={() => toggleAccordion(index)}
                     >
                       {item.title}
-                      <span className='spanPlus w-[40px] h-[40px] duration-500 bg-black text-yellow-500 rounded-full absolute flex items-center justify-center right-[-40px] top-[-5px] z-20'>
+                      <span className={`spanPlus w-[40px] h-[40px] duration-500 bg-black text-yellow-500 rounded-full absolute flex items-center justify-center right-[-40px] ${index === 1 ? "top-[15px]" : "top-[0px]"}  z-20`}>
                         <FontAwesomeIcon
                           icon={openStates[index] ? faMinus : faPlus}
                           className='duration-500 text-[25px]'
@@ -79,8 +83,14 @@ const WhyChoose = () => {
                 </Accordion>
               </div>
             ))}
-            <button>
+            <button onClick={() => router.push("faq")} className="group flex mx-auto font-bold gap-2 w-[300px] bg-black p-3 text-yellow-500 rounded-full text-center justify-center items-center transition-all duration-500 mt-12 border border-solid border-black hover:text-black hover:bg-[#ffffff]">
               Explore our FAQ
+              <div>
+                <FontAwesomeIcon
+                  icon={faArrowUp}
+                  className="text-yellow-500 w-[14px] rotate-[45deg] duration-500 group-hover:text-black group-hover:bg-transparent"
+                />
+              </div>
             </button>
           </div>
           <div className="images"></div>
@@ -88,8 +98,8 @@ const WhyChoose = () => {
       </ContentWrapper>
       <div className="images absolute right-0 top-0 hidden lgg:block">
         <div className="flex gap-1">
-          <Image src={image} alt='' className=' w-[280px] xl:w-[350px] h-[700px] object-cover' />
-          <Image src={image2} alt='' className='w-[280px] xl:w-[350px] h-[700px] object-cover' />
+          <Image src={image} alt='' className=' w-[280px] xl:w-[350px] h-[1050px] object-cover' />
+          <Image src={image2} alt='' className='w-[280px] xl:w-[350px] h-[1050px] object-cover' />
         </div>
       </div>
     </div>

@@ -46,7 +46,9 @@ const items = [
 
 const Cards = () => {
   return (
-    <div className="bg-gradient-to-br overflow-hidden from-green-400 via-yellow-400 to-blue-500 pt-[50px] pb-[60px] rounded-bl-[50px] rounded-br-[50px]">
+    <div className="overflow-hidden pt-[50px] pb-[60px] rounded-bl-[50px] rounded-br-[50px]"
+      style={{ background: "linear-gradient(34deg, #ffcb00 6%, #9fe92f 21%, #57e951 53%, #15a9db 72%, #3575bd 100%)"}}
+    >
       <ContentWrapper>
         {/* Grid layout for the cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -60,7 +62,7 @@ const Cards = () => {
               data-aos-duration="800"
             >
               {/* Overlay effect that appears on hover */}
-              <div className="bg-[#000000] duration-300 opacity-20 left-[0%] absolute w-[100%] h-[100%] group-hover:bg-[#008000] group-hover:opacity-80"></div>
+              <div className="bg-[#000000] duration-300 opacity-20 left-[0%] absolute w-[100%] h-[100%] group-hover:opacity-40"></div>
               {/* Display the image inside the card */}
               <Image
                 src={item.image}
@@ -68,9 +70,9 @@ const Cards = () => {
                 className="w-full h-[400px] object-cover"
               />
               {/* Text content of the card, positioned at the bottom */}
-              <div className="absolute bottom-[-170px] left-0 text-white p-4 duration-500 group-hover:bottom-[10px]">
-                <h3 className="font-semibold text-[22px] mb-5">{item.title}</h3>
-                <p className="text-[#ffffffca] leading-[1.9]">{item.text}</p>
+              <div className={`absolute top-[80%] left-0 text-white p-4 duration-500 ${index === 0 || index === 3 ? "group-hover:top-[54%]" : index === 5 ? "group-hover:top-[62%]" : "group-hover:top-[47%]"}   group-hover:bg-[#008000d0] group-hover:opacity-80`}>
+                <h3 className="font-semibold text-[22px]">{item.title}</h3>
+                <p className="text-[#ffffffec] leading-[1.9]">{item.text}</p>
               </div>
             </div>
           ))}

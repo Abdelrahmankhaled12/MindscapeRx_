@@ -9,7 +9,10 @@ import logo from '../../assets/logo2.png'; // Logo image for Mindscape Rx
 // Functional component for the "Join Now" section
 const JoinNow = ({ text }: { text: boolean }) => {
     return (
-        <div className="bg-gradient-to-r  overflow-hidden via-yellow-400 from-green-400 to-blue-500 pt-[40px] pb-[40px] rounded-bl-[50px] rounded-br-[50px] mb-[50px]">
+        <div className="pt-[40px] pb-[40px] rounded-bl-[50px] rounded-br-[50px] mb-[50px]"
+        style={{background: "linear-gradient(34deg, rgb(255, 203, 0) 5%, rgb(158 240 33) 26%, rgb(87, 233, 79) 51%, rgb(21, 169, 219) 65%, rgb(53, 117, 189) 100%)"}}
+        
+        >
             {/* Gradient background with rounded bottom corners */}
             <div className='w-full max-w-[900px] mx-auto px-5 py-3 xl:px-0 xl:py-4'>
                 {
