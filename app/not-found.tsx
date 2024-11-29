@@ -21,22 +21,20 @@ const Custom404 = () => {
 
     return (
         <Effect>
-            <Header />
-            <div className="py-0 pb-12"> {/* Replacing .notFoundPage styles */}
+            <div className="py-[80px]"> 
                 <ContentWrapper>
                     <div className="relative top-[-20px]">
-                        <h1 className="text-center text-[170px] text-primary font-bold">404</h1>  {/* 404 error code */}
+                        <h1 className="text-[#007bff] text-center text-[170px] text-primary font-bold mb-[50px]">404</h1>  {/* 404 error code */}
                         <div className="relative top-[-60px] leading-6 text-center">
                             <h2 className="mt-0 text-[27px] text-black sm:text-[50px]">Nothing to see here!</h2>
                             <p className="mx-auto mt-5 text-black text-[20px] font-semibold sm:w-[820px]">The page you are looking for may have been moved or no longer exists, if you wish you can return to our home page.</p>
-                            <Link className="mt-6 block bg-primary text-white text-[22px] font-semibold h-[60px] rounded-[10px] border-2 border-primary transition duration-500 ease-in-out shadow-lg hover:bg-white hover:text-primary px-[35px] py-[12px]" href={"/"}>
+                            <Link className="mt-6 block w-[220px] py-[20px] bg-[#007bff] text-white text-[22px] font-semibold rounded-[10px] border-2 border-[#007bff] transition duration-500 ease-in-out hover:bg-white hover:text-[#007bff] px-[35px] mx-auto" href={"/"}>
                                 Home Page
                             </Link>
                         </div>
                     </div>
                 </ContentWrapper>
             </div>
-            <Footer />
         </Effect>
     );
 };

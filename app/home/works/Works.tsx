@@ -34,14 +34,14 @@ const Works = () => {
             {/* Wrapping the content with ContentWrapper for consistent layout */}
             <ContentWrapper>
                 {/* Title for the "How It Works" section */}
-                <h1 className='text-[45px] text-[#000000] text-center' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">How It Works</h1>
+                <h1 className='text-[45px] text-[#000000] text-center'>How It Works</h1>
 
                 {/* Grid layout to display the steps in three columns on medium and larger screens */}
                 <div className="grid md:grid-cols-3 gap-5 mt-12 relative">
 
                     {/* Loop through each step item to display it dynamically */}
                     {items.map((item, index) => (
-                        <div className="box text-center" key={index} data-aos="fade-up" data-aos-delay={(index + 1) * 150} data-aos-duration="800">
+                        <div className="box text-center" key={index}>
                             {/* Image section for each step */}
                             <div className="image">
                                 <Image src={item.image} alt={item.title} className='block mx-auto' />

@@ -47,7 +47,7 @@ const WhyChoose = () => {
             <h1 className='text-[35px] md:text-[60px] leading-[1.1] font-medium' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
               Why Choose
             </h1>
-            <h1 className='text-[35px] md:text-[60px] text-transparent font-medium bg-clip-text bg-gradient-to-r from-[#00bfff] to-[#54e951]'>
+            <h1 className='text-[35px] md:text-[60px] text-transparent font-medium bg-clip-text bg-gradient-to-r from-[#00bfff] to-[#54e951]' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
               ketamine therapy ?
             </h1>
             <div className="icon my-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
