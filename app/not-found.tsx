@@ -1,7 +1,5 @@
 import {
     ContentWrapper,
-    Header,
-    Footer,
     Effect,
 } from '../components';  // Importing components from the components directory
 import Link from 'next/link';
