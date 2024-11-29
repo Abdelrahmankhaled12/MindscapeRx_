@@ -4,6 +4,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
 import Image from "next/image";
 import logo from '../../../assets/logo_half.png'
+import text from '../../../assets/home/text.png'
 
 // Functional component for the banner/hero section
 const BannerHome = () => {
@@ -23,10 +24,12 @@ const BannerHome = () => {
                     <div className="flex justify-between flex-col md:flex-row md:gap-[200px] md:items-end w-full max-w-[1300px] mx-auto px-5 py-3 xl:px-0 xl:py-4">
 
                         <div >
-                            <h1 className="text-[35px] md:text-[50px] leading-[1.3] font-bold text-transparent bg-clip-text bg-[#ffffff]" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                            <h1 className="text-[35px] md:text-[50px] leading-[1.3] font-medium text-transparent bg-clip-text bg-[#ffffff]" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
                                 Change Your <br />
                                 Mental Landscape <br />
-                                <span className="bg-clip-text bg-gradient-to-r from-blue-500 via-[#00ff5e] to-[#ffd75a]">Transform Your Life </span> </h1>
+                                <Image src={text} alt='' className='w-[470px] relative left-[-6px] top-[-2px]' />
+
+                            </h1>
                         </div>
 
                         <div className='flex-1'>
