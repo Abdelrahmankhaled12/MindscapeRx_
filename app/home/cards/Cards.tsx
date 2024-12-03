@@ -6,7 +6,7 @@ import image4 from '../../../assets/home/card-4.jpg'; // Importing image for the
 import image5 from '../../../assets/home/card-5.jpg'; // Importing image for the fifth card
 import image6 from '../../../assets/home/card-6.jpg'; // Importing image for the sixth card
 
-import { ContentWrapper } from '@/components'; // Importing ContentWrapper for consistent layout
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Importing ContentWrapper for consistent layout
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // FontAwesome icon for the arrow
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome component for rendering icons
 
@@ -55,7 +55,7 @@ const Cards = () => {
           {/* Loop through items to render each card dynamically */}
           {items.map((item, index) => (
             <div
-              className="relative rounded-lg overflow-hidden group cursor-pointer"
+              className="relative overflow-hidden group cursor-pointer rounded-[12px]"
               key={index}
               data-aos="fade-up"
               data-aos-delay={(index + 1) * 100} // Delay for AOS (Animate On Scroll)
@@ -67,10 +67,10 @@ const Cards = () => {
               <Image
                 src={item.image}
                 alt={item.title}
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[350px] object-cover"
               />
               {/* Text content of the card, positioned at the bottom */}
-              <div className={`absolute top-[87%] left-0 text-white p-4 duration-500 ${index === 0 || index === 3 ? "group-hover:top-[54%]" : index === 5 ? "group-hover:top-[62%]" : "group-hover:top-[47%]"}   group-hover:bg-[#008000d0] group-hover:opacity-80`}>
+              <div className={`absolute top-[85%] left-0 text-white p-4 duration-500 ${index === 0 || index === 3 ? "group-hover:top-[48%]" : index === 5 ? "group-hover:top-[55%]" : "group-hover:top-[39%]"}   group-hover:bg-[#008000d0] group-hover:opacity-80`}>
                 <h3 className="font-semibold text-[22px]">{item.title}</h3>
                 <p className="text-[#ffffffec] leading-[1.9]">{item.text}</p>
               </div>

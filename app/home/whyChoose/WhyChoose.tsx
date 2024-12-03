@@ -1,9 +1,9 @@
 "use client"
 
-import { ContentWrapper } from '@/components'
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import icon from '../../../assets/icon_2.png'
+import icon from '../../../assets/home/Smiling-Face.svg'
 import image from '../../../assets/home/home-4.jpg'
 import image2 from '../../../assets/home/home-5.jpg'
 
@@ -43,23 +43,23 @@ const WhyChoose = () => {
     <div className='relative bg-[#f2fdeb] pt-[50px] pb-[60px] overflow-hidden'>
       <ContentWrapper>
         <div className="grid lgg:grid-cols-2">
-          <div className="text">
-            <h1 className='text-[35px] md:text-[60px] leading-[1.1] font-medium' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <div className="text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+            <h1 className='text-[35px] md:text-[60px] leading-[1.1] font-medium'>
               Why Choose
             </h1>
-            <h1 className='text-[35px] md:text-[60px] text-transparent font-medium bg-clip-text bg-gradient-to-r from-[#00bfff] to-[#54e951]' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+            <h1 className='text-[35px] md:text-[60px] text-transparent font-medium bg-clip-text bg-gradient-to-r from-[#00bfff] to-[#54e951]'>
               ketamine therapy ?
             </h1>
-            <div className="icon my-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-              <Image src={icon} alt='' />
+            <div
+              className="image mb-[15px] w-[90px] h-[90px] flex items-center justify-center rounded-full relative"
+              style={{ background: "linear-gradient(0deg, #2d81c3 0%, #31dd71 50%, #fbcd01 100%)" }}
+            >
+              <Image src={icon} alt='' className='block mx-auto w-[55px] h-[55px] text-[#ffffff] ' />
             </div>
             {items.map((item, index) => (
               <div
                 className="accordionSection"
                 key={index}
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="800"
               >
                 <Accordion className="accordion">
                   <AccordionSummary
@@ -98,14 +98,14 @@ const WhyChoose = () => {
           </div>
           <div className="images"></div>
         </div>
-      </ContentWrapper>
+      </ContentWrapper >
       <div className="images absolute right-0 top-0 hidden lgg:block">
         <div className="flex gap-1">
           <Image src={image} alt='' className=' w-[280px] xl:w-[350px] h-[1050px] object-cover' />
           <Image src={image2} alt='' className='w-[280px] xl:w-[350px] h-[1050px] object-cover' />
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

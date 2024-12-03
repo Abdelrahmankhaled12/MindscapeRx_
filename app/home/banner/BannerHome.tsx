@@ -12,7 +12,7 @@ const BannerHome = () => {
         <div className='overflow-hidden'>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative h-[110vh] bg-cover bg-center"
+                className="relative h-[102vh] bg-cover bg-center"
                 style={{ backgroundImage: 'url(/background/home.jpg)' }} // Inline style for background image
             >
                 {/* Semi-transparent overlay for darkening the background */}
@@ -20,7 +20,7 @@ const BannerHome = () => {
                 <Image src={logo} alt="Logo" className="hidden md:block md:w-[180px] absolute top-1/2 right-[25%] opacity-40 transform -translate-x-1/2 -translate-y-1/2" />
 
                 {/* Content container positioned relative to overlay */}
-                <div className="relative z-10 h-full flex flex-col justify-end mb-[30px] text-white px-4 pb-[90px]" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+                <div className="relative z-10 h-full flex flex-col justify-end mb-[30px] text-white px-4 pb-[70px]" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
                     <div className="flex justify-between flex-col md:flex-row md:gap-[200px] md:items-end w-full max-w-[1300px] mx-auto px-5 py-3 xl:px-0 xl:py-4">
 
                         <div >

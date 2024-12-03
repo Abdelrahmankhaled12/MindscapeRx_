@@ -1,7 +1,5 @@
-import {
-    ContentWrapper,
-    Effect,
-} from '../components';  // Importing components from the components directory
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper';
+import Effect from '@/components/effect/Effect';
 import Link from 'next/link';
 import type { Metadata } from "next";
 

@@ -1,4 +1,4 @@
-import { ContentWrapper } from '@/components'; // Importing ContentWrapper component for consistent layout
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Importing ContentWrapper component for consistent layout
 import React from 'react'; // Importing React library
 
 const WhyLose = () => {
@@ -17,8 +17,10 @@ const WhyLose = () => {
                     >
                         <div className="max-w-[500px]">
                             {/* Text content */}
-                            <h1 className="text-[25px] sm:text-[40px] font-bold text-transparent bg-clip-text bg-[#ffffff] mb-[15px]">
-                                Why <span className="bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">lower-dose</span> ketamine?
+                            <h1 className="text-[25px] sm:text-[40px] font-medium text-transparent bg-clip-text bg-[#ffffff] mb-[15px]">
+                                Why <span className="bg-clip-text"
+                                    style={{ backgroundImage: "linear-gradient(90deg, rgb(19, 174, 223) 10%, rgb(41, 212, 139) 21%, rgb(47 237 39) 40%, rgb(56 255 0) 52%, rgb(213, 217, 21) 90%);" }}
+                                >lower-dose</span> ketamine?
                             </h1>
                             {/* Description text */}
                             <p className="mb-6 text-[#ffffffe0] leading-[1.7] text-[16px]">

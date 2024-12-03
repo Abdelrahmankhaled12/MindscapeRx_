@@ -1,5 +1,7 @@
 import Negative from './home/negative/Negative'; // Importing the Negative section component
-import { Effect, Footer, Header } from '@/components'; // Importing reusable components for the layout
+import Effect from '@/components/effect/Effect';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/Header';
 import LearnMore from './home/learnMore/LearnMore'; // Importing LearnMore section component
 import Works from './home/works/Works'; // Importing Works section component
 import WhyLose from './home/whyLose/WhyLose'; // Importing WhyLose section component

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import science1 from '../../../assets/science/science-7.png'; // First brain scan image
 import science2 from '../../../assets/science/science-8.png'; // Second brain scan image
-import { ContentWrapper } from '@/components'; // Wrapper component for consistent layout
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Wrapper component for consistent layout
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome icon for the arrow
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
 
@@ -38,7 +38,7 @@ const LowDose: React.FC = () => {
                         </button>
 
                         {/* Clinical Trial Info */}
-                        <div className="bg-[#ffffff] p-6 rounded-lg shadow-[0px_4.25px_8px_3px_rgba(171,171,171,0.4)] mt-7">
+                        <div className="bg-[#ffffff] p-6  rounded-[12px] shadow-[0px_4.25px_8px_3px_rgba(171,171,171,0.4)] mt-7">
                             <p className="text-gray-800">
                                 In a small clinical trial focused on low-dose, oral ketamine for suicidal ideation,
                                 <span className="font-semibold"> 69% of participants </span> taking oral ketamine
@@ -94,7 +94,7 @@ const LowDose: React.FC = () => {
                         </button>
 
                         {/* Clinical Trial Info */}
-                        <div className="bg-[#ffffff] p-6 rounded-lg shadow-[0px_4.25px_8px_3px_rgba(171,171,171,0.4)] mt-7">
+                        <div className="bg-[#ffffff] p-6 rounded-[12px] shadow-[0px_4.25px_8px_3px_rgba(171,171,171,0.4)] mt-7">
                             <p className="text-gray-800">
                                 In a small clinical trial focused on low-dose, oral ketamine for suicidal ideation,
                                 <span className="font-semibold"> 69% of participants </span> taking oral ketamine
@@ -107,7 +107,9 @@ const LowDose: React.FC = () => {
                 </div>
 
                 <h1 className="text-[30px] sm:text-[40px]  md:text-[65px] mt-10 text-center font-medium text-transparent bg-clip-text bg-[#ffffff]">
-                    Start Your <span className="bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">Journey</span> Now.
+                    Start Your <span className="bg-clip-text"
+                        style={{ backgroundImage: "linear-gradient(90deg, rgb(0, 194, 255) 25%, rgb(10 255 0 / 88%) 50%, rgb(255 204 0 / 85%) 88%)" }}
+                    >Journey</span> Now.
                 </h1>
             </ContentWrapper>
         </div>

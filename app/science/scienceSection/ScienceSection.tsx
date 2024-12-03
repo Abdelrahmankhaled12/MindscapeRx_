@@ -6,15 +6,19 @@ import science4 from '../../../assets/science/science-3.jpg'
 import science5 from '../../../assets/science/science-4.jpg'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome icon for the arrow
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
-import { ContentWrapper } from '@/components'
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper';
 
 
 const ScienceSection: React.FC = () => {
     return (
         <div className='bg-[#ffffff] relative top-[-40px] pt-[10px] pb-[80px] rounded-tl-[50px] rounded-tr-[50px] overflow-hidden'>
-            <div className="hidden md:block h-[393px] w-[363px] absolute right-0 top-[290px] filter blur-[50px] bg-gradient-to-tr from-green-100 via-yellow-100 to-blue-100 p-8 rounded-lg">
+            <div className="hidden md:block h-[393px] w-[363px] absolute right-0 top-[290px] filter opacity-50 blur-[50px] p-8 rounded-lg"
+                style={{ backgroundImage: "linear-gradient(180deg, #eae66e 20%, #62e05e 50%, #52bdd4 80%)" }}
+            >
             </div>
-            <div className="hidden md:block h-[393px] w-[363px] absolute left-0 bottom-[250px] filter blur-[50px]  bg-gradient-to-tr from-green-100 via-yellow-100 to-blue-100 p-8 rounded-lg">
+            <div className="hidden md:block h-[393px] w-[363px] absolute  opacity-50 left-0 bottom-[250px] filter blur-[50px] p-8 rounded-lg"
+                style={{ backgroundImage: "linear-gradient(180deg, #eae66e 20%, #62e05e 50%, #52bdd4 80%)" }}
+            >
             </div>
             <ContentWrapper>
                 <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
@@ -29,7 +33,7 @@ const ScienceSection: React.FC = () => {
                         <p className="text-[#000000c2] leading-[1.8] text-[16px] mb-5">Ketamine causes a rapid expansion in the brain by targeting the glutamate system to amplify neuroplasticity (NMDA) receptors, quickly initiating the growth of new neural connections. This process is called synaptogenesis.</p>
                         <p className="text-[#000000c2] leading-[1.8] text-[16px] mb-8">Research from ketamine treatment for mental health conditions is ongoing, but a growing body of evidence suggests ketamine therapy is an effective option for people experiencing depression, anxiety, and PTSD symptoms.</p>
 
-                        <div className="bg-gray-100 p-6 rounded-lg shadow-[0px_2px_4px_3px_rgba(171,171,171,0.1)]">
+                        <div className="bg-gray-100 p-6 rounded-[12px]">
                             <p className="text-gray-800">
                                 <span className="font-semibold">A 2024 study </span> found that ketamine can be
                                 <span className="font-semibold"> effective for chronic and treatment-resistant depression and PTSD. </span>
@@ -41,23 +45,23 @@ const ScienceSection: React.FC = () => {
 
                     </div>
                     <div className="relative flex  sm:justify-center  md:justify-end py-[20px]" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
-                        <div className="absolute left-[50px] bottom-[0px] md:bottom-[280px] md:left-[41px] transform translate-x-8 translate-y-8 w-[350px] h-[280px] rounded-lg overflow-hidden shadow-lg">
-                            <Image src={science3} alt="Background Image" className="w-full h-full object-cover" />
+                        <div className="absolute left-[50px] bottom-[0px] md:bottom-[280px] md:left-[41px] transform translate-x-8 translate-y-8 w-[350px] h-[280px] rounded-[12px] overflow-hidden shadow-lg">
+                            <Image src={science3} alt="Background Image" className="w-full h-full object-cover rounded-[12px]" />
                         </div>
 
-                        <div className="relative w-[300px] border-[8px] border-solid border-[#ffffff] rounded-[6px] h-[350px] overflow-hidden shadow-lg">
-                            <Image src={science1} alt="Foreground Image" className="w-full h-full object-cover rounded-[6px]" />
+                        <div className="relative w-[300px] border-[8px] border-solid border-[#ffffff]  rounded-[12px] h-[350px] overflow-hidden bg-white">
+                            <Image src={science1} alt="Foreground Image" className="w-full h-full object-cover rounded-[12px]" />
                         </div>
                     </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-10 mt-[80px]">
                     <div className="relative flex justify-center  md:justify-start py-[20px] order-2 md:order-1" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
-                        <div className="absolute bottom-0 md:bottom-[220px] right-[90px] transform translate-x-8 translate-y-8 w-[350px] h-[280px] rounded-lg overflow-hidden shadow-lg">
-                            <Image src={science5} alt="Background Image" className="w-full h-full object-cover" />
+                        <div className="absolute bottom-0 md:bottom-[220px] right-[90px] transform translate-x-8 translate-y-8 w-[350px] h-[280px] rounded-[6px] overflow-hidden shadow-lg">
+                            <Image src={science5} alt="Background Image" className="w-full h-full object-cover rounded-[12px]" />
                         </div>
 
-                        <div className="relative w-[300px] border-[8px] border-solid border-[#ffffff] rounded-[6px] h-[350px] overflow-hidden shadow-lg">
-                            <Image src={science4} alt="Foreground Image" className="w-full h-full object-cover rounded-[6px]" />
+                        <div className="relative w-[300px] border-[8px] border-solid border-[#ffffff] bg-white rounded-[12px] h-[350px] overflow-hidden shadow-lg">
+                            <Image src={science4} alt="Foreground Image" className="w-full h-full object-cover rounded-[12px]" />
                         </div>
                     </div>
                     <div className="text order-1 md:order-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
@@ -74,7 +78,7 @@ const ScienceSection: React.FC = () => {
                             </div>
                         </button>
 
-                        <div className="bg-gray-100 p-6 rounded-lg shadow-[0px_2px_4px_3px_rgba(171,171,171,0.1)]">
+                        <div className="bg-gray-100 p-6 rounded-[12px]">
                             <p className="text-gray-800">
                                 <span className="font-semibold">A 2024 study </span> found that ketamine can be
                                 <span className="font-semibold"> effective for chronic and treatment-resistant depression and PTSD. </span>

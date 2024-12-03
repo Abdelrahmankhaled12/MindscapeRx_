@@ -1,6 +1,8 @@
 import "./globals.css"; // Import global styles for the application
 import ButtonScroll from "@/components/buttonScroll/ButtonScroll"; // Importing ButtonScroll component for scroll-to-top functionality
 import { AOSInit } from "@/components/aos/AOSInit"; // Importing AOSInit for animations initialization
+import { Providers } from "./providers";
+import { Toaster } from "@/components/ui/toaster";
 
 // Define RootLayout component, which wraps the entire application layout
 export default function RootLayout({
@@ -12,11 +14,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/icon_only.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       </head>
       <body>
         {/* Rendering the children passed to this layout */}
-        {children}
+        <Providers>
+          {children}
+        </Providers>
+        <Toaster />
 
         {/* Initialize AOS (Animate On Scroll) for scroll-based animations */}
         <AOSInit />

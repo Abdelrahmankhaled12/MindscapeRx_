@@ -1,6 +1,6 @@
 "use client"
 
-import { ContentWrapper } from '@/components'; // Importing ContentWrapper for consistent layout
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Importing ContentWrapper for consistent layout
 import React, { useState } from 'react'; // Importing React and useState for handling carousel state
 import { faChevronRight, faChevronLeft, faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
@@ -73,8 +73,8 @@ const Stories = () => {
                                     </div>
                                     <div className="flex gap-2 items-center mt-5">
                                         {/* Bullet indicator for carousel */}
-                                        <span className='bg-[#0000ff24] w-[18px] h-[18px] rounded-[50%] relative'>
-                                            <span className='bg-blue-500 w-[12px] h-[12px] rounded-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10 absolute top-[50%] left-[51.5%]'></span>
+                                        <span className='bg-[#d2ebf6] w-[23px] h-[23px] rounded-[50%] relative flex justify-center items-center'>
+                                            <span className='bg-[#1e9bd4] w-[15px] h-[15px] rounded-[50%] z-10'></span>
                                         </span>
                                         <p className='text-[18px] text-[#000000]'>{item.name}</p>
                                     </div>
@@ -87,7 +87,7 @@ const Stories = () => {
                             {/* Dot indicators */}
                             <ul className='list-none flex justify-end items-center gap-[5px] mt-[20px] cursor-pointer'>
                                 {items.map((item, index) => (
-                                    <li key={index} className={`w-[12px] h-[12px] rounded-full  border-[3px] border-[#ffff002c] transition-all duration-200 hover:bg-white hover:border-[#eab308] ${index === currentIndex ? "bg-[#eab308]" : "bg-transparent"}`} onClick={() => moveCarousel(index)}></li>
+                                    <li key={index} className={`w-[12px] h-[12px] rounded-full  transition-all duration-200  ${index === currentIndex ? "bg-[#ffcc00]" : "bg-[#ffeb99]"}`} onClick={() => moveCarousel(index)}></li>
                                 ))}
                             </ul>
 

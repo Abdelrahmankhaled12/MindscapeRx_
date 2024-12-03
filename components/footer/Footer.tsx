@@ -1,8 +1,8 @@
 // Import necessary components and assets
 import Image from 'next/image'; // Next.js optimized image component
 import Link from 'next/link'; // Next.js link component for client-side navigation
-import ContentWrapper from '../contentWrapper/ContentWrapper'; // Wrapper for consistent layout
-import logo from '../../assets/logoAndText.png'; // Company logo
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Wrapper for consistent layout
+import logo from '../../assets/Logo_footer.jpg'; // Company logo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome for social media icons
 import { faFacebookF, faGooglePlusG, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'; // Social media icons
 import Copyrights from './Copyrights'; // Footer copyrights section
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                         <Image
                             src={logo}
                             alt="MindscapeRx Logo"
-                            className="mb-1 mx-auto"
+                            className="mb-3 mx-auto"
                         />
                         {/* Social media icons */}
                         <div className="flex items-center justify-center gap-4">

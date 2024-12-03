@@ -17,7 +17,9 @@ const items = [
 const StudyFound = () => {
     return (
         <div className='bg-[#ffffff] pt-10 pb-[60px] relative top-[-40px] rounded-tl-[50px] rounded-tr-[50px] overflow-hidden'> {/* White background with rounded top corners */}
-            <div className="hidden md:block h-[393px] w-[363px] absolute left-0 bottom-[250px] filter blur-[50px]  bg-gradient-to-tr from-green-100 via-yellow-100 to-blue-100 p-8 rounded-lg">
+            <div className="hidden md:block h-[393px] w-[363px] absolute left-0 bottom-[250px] filter blur-[50px] opacity-50 p-8 rounded-lg"
+             style={{ backgroundImage: "linear-gradient(180deg, #eae66e 20%, #62e05e 50%, #52bdd4 80%)" }}
+            >
             </div>
 
             <ContentWrapper> {/* Wrapper for consistent content alignment */}
@@ -53,13 +55,13 @@ const StudyFound = () => {
                     <div className="grid md:grid-cols-[1fr_1fr] gap-10"> {/* Grid for image and text side-by-side */}
 
                         {/* Image container */}
-                        <div className="flex relative space-x-6 bg-gradient-to-r from-green-100 via-blue-100 to-indigo-100 p-6 rounded-lg h-[350px] md:h-auto " data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                        <div className="flex relative space-x-6 bg-gradient-to-r from-green-100 via-blue-100 to-indigo-100 p-6 rounded-[12px] h-[350px] md:h-auto ">
                             {/* Foreground image */}
                             <div className="absolute z-10">
                                 <Image
                                     src={image2}
                                     alt="Telehealth Consultation"
-                                    className="w-[230px] h-[180px] sm:w-[280px] sm:h-[300px] rounded-xl shadow-md"
+                                    className="w-[230px] h-[180px] sm:w-[280px] sm:h-[300px] rounded-[12px] shadow-md"
                                 />
                             </div>
 
@@ -68,7 +70,7 @@ const StudyFound = () => {
                                 <Image
                                     src={image}
                                     alt="Person Relaxing"
-                                    className="w-[230px]  sm:w-[320px] sm:h-[300px] rounded-xl shadow-md"
+                                    className="w-[230px]  sm:w-[320px] sm:h-[300px] rounded-[12px] shadow-md"
                                 />
                             </div>
                         </div>

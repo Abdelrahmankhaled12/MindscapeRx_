@@ -1,6 +1,6 @@
 // Import necessary dependencies
 import React from 'react';
-import { ContentWrapper } from '..'; // Wrapper component for consistent layout
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Wrapper component for consistent layout
 import Link from 'next/link'; // Next.js Link component for client-side navigation
 
 // Define the Copyrights component

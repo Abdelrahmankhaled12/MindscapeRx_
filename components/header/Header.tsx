@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // FontAwesome
 import { faUser, faBars } from '@fortawesome/free-solid-svg-icons'; // Importing necessary icons
 import MenuMobile from './menu/MenuMobile'; // Mobile menu component
 import { useState } from 'react'; // Importing useState for managing mobile menu state
-import logo from '../../assets/logo_iconAndtext.png'; // Logo image
+import logo from '../../assets/logo_navbar.png'; // Logo image
 import { HEADER_LINKS } from '@/constants'; // Importing header links from constants
 import { usePathname } from 'next/navigation'; // Importing usePathname for active route handling
 

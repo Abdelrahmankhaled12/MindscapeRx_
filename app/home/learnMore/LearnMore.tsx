@@ -1,7 +1,7 @@
 import Image from 'next/image'; // Importing Next.js optimized Image component for better performance
 import React from 'react'; // React library for building components
 import image from '../../../assets/home/home-3.jpg'; // Importing the image to display alongside text
-import { ContentWrapper } from '@/components'; // Importing ContentWrapper for consistent layout styling
+import ContentWrapper from '@/components/contentWrapper/ContentWrapper'; // Importing ContentWrapper for consistent layout styling
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'; // Font Awesome icon for arrows
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Font Awesome component for rendering icons
 

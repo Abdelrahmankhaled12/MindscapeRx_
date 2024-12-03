@@ -2,7 +2,8 @@ import Header from '@/components/header/Header'; // Importing Header component f
 import BannerScience from './banner/BannerScience'; // Importing the banner section specific to the science page
 import ScienceSection from './scienceSection/ScienceSection'; // Importing the section that explains the science behind ketamine
 import LowDose from './lowDose/LowDose'; // Importing the LowDose section explaining low-dose ketamine therapy
-import { Effect, Footer } from '@/components'; // Importing Footer component
+import Effect from '@/components/effect/Effect';
+import Footer from '@/components/footer/Footer';
 import { Metadata } from 'next'; // Importing Metadata type for SEO configuration
 
 // Define metadata for the SciencePage to improve SEO and social sharing

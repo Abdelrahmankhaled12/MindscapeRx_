@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   font-family: "Roboto", serif !important;
   box-sizing: border-box;
@@ -60,6 +59,14 @@
   border-right: none;
   padding: 8px 0px;
 
+  &:first-of-type {
+    border: none;
+  }
+  
+  &:last-of-type {
+    border: none;
+  }
+
   * {
     box-shadow: none !important;
     background-color: transparent !important;
@@ -80,7 +87,7 @@
     height: 1px;
     background-color: #ffffff3b;
     bottom: 12px;
-    left: 180px;
+    left: 200px;
     z-index: -1;
   }
 
@@ -91,11 +98,10 @@
     height: 1px;
     background-color: #ffffff3b;
     bottom: 12px;
-    right: 190px;
+    right: 205px;
     z-index: -1;
   }
 }
-
 
 .activeItem::before {
   content: "";
@@ -103,7 +109,7 @@
   width: 100%;
   height: 2px;
   background-color: #ffffff;
-  bottom: -27px;
+  bottom: -33.5px;
   left: 0px;
 }
 
@@ -126,7 +132,7 @@
   position: absolute;
   width: 2px;
   height: 100%;
-  border-left: 1px dashed #68D391;
+  border-left: 1px dashed #68d391;
   top: 0;
   z-index: 2;
 }

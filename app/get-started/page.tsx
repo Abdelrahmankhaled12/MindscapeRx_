@@ -5,7 +5,7 @@ import JoinNow from '../../components/joinNow/JoinNow'; // Section for joining t
 import Footer from '@/components/footer/Footer'; // Footer component
 import BannerHero from './bannerHero/BannerHero'; // Hero banner component
 import { Metadata } from 'next'; // Metadata type from Next.js
-import { Effect } from '@/components';
+import Effect from '@/components/effect/Effect';
 
 // Define metadata for the page to improve SEO and social media sharing
 export const metadata: Metadata = {

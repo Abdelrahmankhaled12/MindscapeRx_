@@ -8,7 +8,7 @@ const BannerHero = () => {
         <div className='overflow-hidden'>
             {/* Hero section with a full-screen fixed background image */}
             <section
-                className="relative h-[85vh] bg-cover bg-center"
+                className="relative h-[70vh] bg-cover bg-center"
                 style={{ backgroundImage: 'url(/background/get-started.jpg)' }} // Inline style for background image
             >
                 {/* Semi-transparent overlay for darkening the background */}
@@ -20,7 +20,9 @@ const BannerHero = () => {
                     {/* Inner container for centering and styling content */}
                     <div className='w-full max-w-[1400px] mx-auto px-5 py-3 xl:px-0 xl:py-4'>
                         {/* Heading with gradient text */}
-                        <h1 className="text-[60px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-yellow-500 to-yellow-600">
+                        <h1 className="text-[60px] font-bold text-transparent bg-clip-text w-fit"
+                            style={{ backgroundImage: "linear-gradient(90deg, #27d193 10%, #b8e223 72%, #d5d915 62%, #ffcc00 90%)" }}
+                        >
                             Get Started
                         </h1>
                         {/* Subtitle text */}

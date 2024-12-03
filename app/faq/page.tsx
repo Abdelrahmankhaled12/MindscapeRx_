@@ -1,6 +1,8 @@
 // Import necessary components
 import BannerFAQ from './banner/BannerFAQ'; // Banner section specific to the FAQ page
-import { Effect, Footer, Header } from '@/components'; // Footer component for consistent site footer
+import Effect from '@/components/effect/Effect';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/Header';
 import FaqSection from './faqSection/FaqSection'; // FAQ section component
 import { Metadata } from 'next'; // Metadata type for SEO configuration
 

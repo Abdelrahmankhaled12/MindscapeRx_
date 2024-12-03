@@ -1,5 +1,8 @@
 import BannerProgram from './banner/BannerProgram'; // Importing BannerProgram component to display the program banner
-import { Effect, Footer, Header, JoinNow } from '@/components'; // Importing common components such as Header, Footer, JoinNow, and Effect
+import Effect from '@/components/effect/Effect';
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/Header';
+import JoinNow from '@/components/joinNow/JoinNow';
 import Steps from './steps/Steps'; // Importing the Steps component which details the program steps
 import { Metadata } from 'next'; // Importing Metadata type from Next.js for SEO optimization
 
